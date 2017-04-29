@@ -1,0 +1,211 @@
+header {
+	@extend .row;
+	margin-bottom: 1.5em;
+	background-color: #eaeaea;
+	padding: 2em 0;
+	text-align: center;
+	h1 {
+		font-weight: bold;
+
+	}
+}
+
+
+
+#trunk {
+	@extend .row;
+	main {
+		@extend .col-lg-9;
+		min-height: 30em;
+		h1, h2 {
+			margin-bottom: .5em;
+			font-weight: bold;
+			color: #aaa;
+		}
+		margin-bottom: 1em;
+	}
+	aside {
+		@extend .col-lg-3;
+	}
+}
+
+footer {
+	@extend .row;
+	margin-top: 1em;
+	border-top: 1px solid #ccc;
+	padding: 1em 0;
+	text-align: center;
+	color: #ccc;
+}
+
+
+.form-actions {
+	border-top: 1px solid #ccc;
+	padding: 1em 1em 2em;
+	margin-bottom: 1em;
+	background-color: #eaeaea;
+}
+
+[class*='outline'] {
+	background-color: white;
+}
+
+.checkbox input{
+	margin-right: .5em;
+}
+
+
+
+
+.up_bottom{
+	margin-bottom: 10px;
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+      h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+
+      .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+      h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+      .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+     h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+      .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+      h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+      .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+   .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+      h1 {
+		font-weight: bold;
+      padding-left: 30%;
+      }
+      .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+     h1 {
+		font-weight: bold;
+      padding-left: 40%;
+      }
+      .footer_text{
+	 padding-left: 40%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    h1 {
+		font-weight: bold;
+      padding-left: 40%;
+      }
+     .footer_text{
+	 padding-left: 40%;
+    }
+
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+      h1 {
+		font-weight: bold;
+      padding-left: 40%;
+      }
+
+    .footer_text{
+	 padding-left: 40%;
+    }
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+   h1 {
+   padding-left: 30%;
+   }
+   .footer_text{
+	 padding-left: 20%;
+    }
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+   h1 {
+		font-weight: bold;
+      padding-left: 40%;
+      }
+
+     .footer_text{
+	 padding-left: 20%;
+    }
+}

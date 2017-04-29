@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phades Blog</title>
+        <%= csrf_meta_tags %>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Phades blog</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <%= render "shared/log_status"%>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid cont-dos">
+            <div class="container">
+                <div id="trunk col-md-8 col-sm-12">
+                        <div id="flash_messages"><%= flash_messages(:close) %></div>
+                        <%= yield %>
+                </div>
+                <div class="footer navbar-fixed-bottom bg-gray padd10">
+                    <div class="container text-center ">
+                        (c) Hecho por el phades
+                    </div>
+                </div>
+              </div>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                <style media="screen">
+                    .bg-gray {
+                        background-color: rgb(156, 155, 155);
+                        color: white;
+                    }
+                    .padd10 {
+                        padding: 10px;
+                    }
+                    .cont-dos {
+                        margin: 70px 0;
+                    }
+                </style>
+            </body>
+        </html>

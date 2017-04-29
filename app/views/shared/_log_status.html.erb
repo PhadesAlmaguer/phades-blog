@@ -1,0 +1,23 @@
+
+
+
+
+<ul class="nav navbar-nav navbar-right">
+
+				<% if devise_controller? %>
+					<li><%= link_to "Inicio", root_path, class: 'btn btn-outline-primary d-block'%></li>
+
+				<% else %>
+					<% if user_signed_in? %>
+					<li><%= link_to "Mi perfil", edit_user_registration_path, class: 'btn btn-outline-primary d-block up_bottom'%></li>
+					<li><%= link_to "Salir", destroy_user_session_path, method: :delete, class: 'btn btn-outline-primary d-block'%></li>
+					 <% else %>
+					 <li>
+					   <%= link_to "Entrar", new_user_session_path, class: 'btn btn-outline-primary d-block up_bottom'%>
+					 </li>
+					 <li>
+						 <%= link_to "Registrate", new_user_registration_path, class: 'btn btn-outline-primary d-block'%>
+					 </li>
+					<% end %>
+				<% end %>
+      </ul>
